@@ -1,0 +1,29 @@
+xkb_symbols "basic" {
+    // Include the base dvorak layout
+    include "us(dvorak)"
+
+    // Number Row: Number first, Symbol second (Shifted)
+    key <AE01> { [ 1, dollar       ] };
+    key <AE02> { [ 2, plus         ] };
+    key <AE03> { [ 3, bracketleft  ] };
+    key <AE04> { [ 4, braceleft    ] };
+    key <AE05> { [ 5, parenleft    ] };
+    key <AE06> { [ 6, ampersand    ] };
+    key <AE07> { [ 7, equal        ] };
+    key <AE08> { [ 8, parenright   ] };
+    key <AE09> { [ 9, braceright   ] };
+    key <AE10> { [ 0, bracketright ] };
+    key <AE11> { [ asterisk, exclam ] }; // Matches your image's last two slots
+    key <AE12> { [ numbersign, bar  ] };
+
+    key <AD12> { [ at, numbersign ] };
+
+    // Force Caps Lock to act as Escape
+    // We use "replace" to ensure it overrides the default behavior
+
+    // this is the way of raplacing those 2 keys
+    // however i have an app that does that for me
+    // should probably get rid off that though
+    // replace key <CAPS> { [ Escape ] };
+    // replace key <ESC>  { [ Caps_Lock ] };
+};
