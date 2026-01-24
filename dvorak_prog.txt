@@ -14,7 +14,7 @@ xkb_symbols "basic" {
     key <AE09> { [ 9, braceright   ] };
     key <AE10> { [ 0, bracketright ] };
     key <AE11> { [ asterisk, exclam ] }; // Matches your image's last two slots
-    key <AE12> { [ numbersign, bar  ] };
+    key <AE12> { [ numbersign, percent  ] };
 
     key <AD12> { [ at, numbersign ] };
 
