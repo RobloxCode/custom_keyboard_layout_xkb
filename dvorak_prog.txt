@@ -1,6 +1,12 @@
 xkb_symbols "basic" {
-    // Include the base dvorak layout
     include "us(dvorak)"
+
+    // SWAP: First key of second row with first key of bottom row
+    // <AD01> (Top-left) now becomes ; and :
+    key <AD01> { [ semicolon, colon ] };
+
+    // <AB01> (Bottom-left) now becomes ' and "
+    key <AB01> { [ apostrophe, quotedbl ] };
 
     // Number Row: Number first, Symbol second (Shifted)
     key <AE01> { [ 1, dollar       ] };
@@ -13,7 +19,7 @@ xkb_symbols "basic" {
     key <AE08> { [ 8, parenright   ] };
     key <AE09> { [ 9, braceright   ] };
     key <AE10> { [ 0, bracketright ] };
-    key <AE11> { [ asterisk, exclam ] }; // Matches your image's last two slots
+    key <AE11> { [ asterisk, exclam ] }; 
     key <AE12> { [ numbersign, percent  ] };
 
     key <AD12> { [ at, numbersign ] };
@@ -24,6 +30,8 @@ xkb_symbols "basic" {
     // this is the way of raplacing those 2 keys
     // however i have an app that does that for me
     // should probably get rid off that though
+
+    // Your Caps Lock/Esc notes remain
     // replace key <CAPS> { [ Escape ] };
     // replace key <ESC>  { [ Caps_Lock ] };
 };
