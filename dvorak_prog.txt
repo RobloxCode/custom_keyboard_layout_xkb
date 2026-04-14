@@ -22,7 +22,7 @@ xkb_symbols "basic" {
     key <AE11> { [ asterisk, exclam ] }; 
     key <AE12> { [ numbersign, percent  ] };
 
-    key <AD12> { [ at, numbersign ] };
+    key <AD12> { [ at, asciicircum ] };
 
     // Force Caps Lock to act as Escape
     // We use "replace" to ensure it overrides the default behavior
